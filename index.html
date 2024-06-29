@@ -404,21 +404,27 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
+					<form method="post" action="" class="form-inline" name="attendance-form">
+						<div class="col-md-3 col-sm-3">
 							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+								<label for="fname" class="sr-only">First Name</label>
+								<input type="name" class="form-control" id="fname" name="fname" placeholder="First Name">
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
+						<div class="col-md-3 col-sm-3">
 							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+								<label for="lname" class="sr-only">Last Name</label>
+								<input type="name" class="form-control" id="lname" name="lname" placeholder="Last Name">
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+						<div class="col-md-3 col-sm-3">
+							<div class="form-group">
+								<label for="guests" class="sr-only">No of Guests</label>
+								<input type="text" class="form-control" id="guests" name="guests" placeholder="No of Guests">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<button type="submit" id="submit" class="btn btn-default btn-block">I am Attending</button>
 						</div>
 					</form>
 				</div>
@@ -478,6 +484,8 @@
 	<script src="js/main.js"></script>
 
 	<script src="js/hearteffect.js"></script>
+	
+	<script src="js/attendance.js"></script>
 
 	<script>
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
