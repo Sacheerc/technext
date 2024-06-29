@@ -2124,4 +2124,14 @@ form label {
   opacity: 0;
 }
 
+.location {
+  margin-top: 23%;
+}
+
+.location-desc {
+  color: #ffffff !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
 /*# sourceMappingURL=style.css.map */
