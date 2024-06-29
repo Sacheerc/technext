@@ -203,7 +203,10 @@ $(document).ready(function () {
     var target = $(this.getAttribute('href'));
     if (target.length) {
       event.preventDefault();
-      // $('.navbar-collapse').collapse('hide');
+      if ($('body').hasClass('offcanvas')) {
+        $('body').removeClass('offcanvas');
+        $('.js-fh5co-nav-toggle').removeClass('active');
+      }
       $('html, body').stop().animate(
         {
           scrollTop: target.offset().top,
