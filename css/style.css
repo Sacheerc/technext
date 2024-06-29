@@ -125,6 +125,10 @@ figure {
   color: #fff;
 }
 
+.timeline-image {
+  width: 475px;
+}
+
 @media screen and (max-width: 768px) {
 
   .fh5co-nav .menu-1,
@@ -275,6 +279,10 @@ figure {
   position: relative;
 }
 
+.fh5co-counter-image {
+  background-image: url(../images/img_bg_5.jpg);
+}
+
 .fh5co-video {
   height: 450px;
   overflow: hidden;
@@ -343,6 +351,10 @@ figure {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+}
+
+.fh5co-cover-image {
+  background-image: url(../images/CHA00741.jpg);
 }
 
 .fh5co-cover .overlay {
@@ -2132,6 +2144,23 @@ form label {
   color: #ffffff !important;
   font-size: 20px !important;
   font-weight: 400 !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .timeline-image {
+    width: 375px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+  }
+
+  .fh5co-cover-image {
+    background-image: url(../images/header-mobile.jpg);
+  }
+
+  .fh5co-counter-image {
+    background-image: url(../images/direction-mobile.jpg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
