@@ -428,11 +428,25 @@
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
 						<form method="post" action="" class="form-inline" name="attendance-form">
+							<div class="row">
+								<div class="form-group text-center">
+									<div class="radio-inline mr-3">
+										<input type="radio" name="iscomming" id="yes" value="yes"
+											class="custom-radio" required>
+										<label for="yes" class="custom-radio-label">YES</label>
+									</div>
+									<div class="radio-inline">
+										<input type="radio" name="iscomming" id="no" value="no"
+											class="custom-radio">
+										<label for="no" class="custom-radio-label">NO</label>
+									</div>
+								</div>
+								<br>
+							</div>
 							<div class="col-md-3 col-sm-3">
 								<div class="form-group">
 									<label for="fname" class="sr-only">First Name</label>
-									<input type="name" class="form-control" id="fname" name="fname" required
-										placeholder="First Name">
+									<input type="name" class="form-control" id="fname" name="fname" required placeholder="First Name">
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-3">
@@ -450,8 +464,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-3 text-center">
-								<button type="submit" id="submit" class="btn btn-default btn-block">I am
-									Attending</button>
+								<button type="submit" id="submit" class="btn btn-default">Submit</button>
 								<div id="loading-spinner" style="display: none;">
 									<img src="./images/loader.gif" alt="Loading..."
 										style="width: 35px; margin-top: 10px; margin-left: 10px;" />

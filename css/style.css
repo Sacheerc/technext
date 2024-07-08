@@ -21,6 +21,18 @@ body {
   overflow-x: hidden;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -2161,6 +2173,15 @@ form label {
   font-weight: 400 !important;
 }
 
+.custom-radio-label {
+  color: white; 
+  padding-left: 10px;
+}
+
+.custom-radio {
+  width: 20px; height: 20px;
+}
+
 @media screen and (max-width: 768px) {
 
   .timeline-image {
@@ -2176,6 +2197,14 @@ form label {
   .fh5co-counter-image {
     background-image: url(../images/direction-mobile.jpg);
   }
+}
+
+#yes {
+  accent-color: #d9534f;
+}
+
+#no {
+  accent-color: #d9534f;
 }
 
 /*# sourceMappingURL=style.css.map */
