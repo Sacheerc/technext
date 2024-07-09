@@ -221,3 +221,27 @@ lightbox.option({
   resizeDuration: 200,
   wrapAround: false,
 });
+
+
+const yesRadio = document.getElementById('yes');
+const noRadio = document.getElementById('no');
+const guestsInput = document.getElementById('guests');
+
+// Function to update the guests input state
+function updateGuestsInput() {
+  if (yesRadio.checked) {
+    guestsInput.disabled = false;
+    guestsInput.required = true;
+  } else if (noRadio.checked) {
+    guestsInput.disabled = true;
+    guestsInput.required = false;
+    guestsInput.value = ''; // Clear the input if it's disabled
+  }
+}
+
+// Attach event listeners
+yesRadio.addEventListener('change', updateGuestsInput);
+noRadio.addEventListener('change', updateGuestsInput);
+
+// Initial check to set the state correctly on page load
+updateGuestsInput();
