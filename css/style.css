@@ -2207,4 +2207,11 @@ form label {
   accent-color: #d9534f;
 }
 
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* This ensures that the button and the loading spinner are stacked vertically */
+}
+
 /*# sourceMappingURL=style.css.map */
